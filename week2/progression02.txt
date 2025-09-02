@@ -1,0 +1,10 @@
+Week2 นำ function filter product มาลองใน website จริงๆ
+
+รายละเอียด
+- ใช้ DOM ในการเข้าถึง HTMl ด้วย js 
+- นำ DOM มาใช้ทำงานต่างๆตามต้องการด้วย js
+- ใช้ filter function กับ product data ที่เปลี่ยนข้อมูลตามช่อง input ตลอด
+
+Reflect 
+- ได้เรียนรู้เรื่องของ DOM JS 
+- นำ filter มาใช้งานจริง กับ website 
