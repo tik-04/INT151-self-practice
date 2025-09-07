@@ -1,0 +1,8 @@
+Week3 นำ api mock data  มาลองใน website จริงๆ
+
+รายละเอียด
+- ใช้ api แทนที่ mockdata เพื่อความเหมือนเวลาจะทำงานจริงๆกับ backend
+- ใช้ fetch เพื่อ เรียกใช้งานเส้น api
+
+Reflect 
+- ได้เรียนรู้เรื่องของ fetch 
