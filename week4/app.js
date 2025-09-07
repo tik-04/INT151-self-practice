@@ -4,12 +4,13 @@ const data = await response.json()
 
 const productDom = document.getElementById("product")
 const searchProductDom = document.getElementById("searchProduct")
+const sortDom = document.getElementById("sort")
 
 function renderProducts(products) {
     productDom.innerHTML = ""
     products.forEach(product => {
         const item = document.createElement("div")
-        item.innerHTML = `${product.productId} ${product.productName} - ${product.productPrice} บาท`
+        item.innerHTML = `${product.productId}  ${product.productName} : ${product.productPrice} บาท`
         productDom.appendChild(item)
     })
 }
@@ -27,5 +28,22 @@ function filterProduct(keyword) {
         x.productName.toLowerCase().includes(keyword.toLowerCase())
     )
 }
+
+let sortState = false
+
+function sortByName() {
+    sortState = !sortState
+    if (sortState) {
+        const sorted = [...data].sort((a, b) =>
+            a.productName.localeCompare(b.productName)
+        )
+        renderProducts(sorted)
+    } else {
+        renderProducts(data)
+    }
+}
+
+sortDom.addEventListener("change", sortByName)
+
 
 
